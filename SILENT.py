@@ -709,7 +709,7 @@ def crackmbasic(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				#cetak(panel(f"[bold green]{idf}|{pw}\n[bold green]{kuki}",width=70,title=f"[bold green]• [bold yellow]• [bold red]• [bold cyan]ASEP OK {tgl} {bln} {thn} [bold red]• [yellow]• [bold green]•",style=f"{color_table}"))
+				#cetak(panel(f"[bold green]{idf}|{pw}\n[bold green]{kuki}",width=70,title=f"[bold green]• [bold yellow]• [bold red]• [bold cyan]SILENT OK {tgl} {bln} {thn} [bold red]• [yellow]• [bold green]•",style=f"{color_table}"))
 				tree = Tree("                                 ")
 				tree.add(f"\r{H}{idf}|{pw}{P} ")
 				tree.add(f"{H}{kuki}{N}")
@@ -740,10 +740,10 @@ def genkey():
                 linex()
                 cetak(f" [[green]![/]] [bold white] Key Lisensi Anda      : [bold green]%s"%(nr))
                 cetak(f" [[green]![/]] [bold white] Copy Key Anda Kirimkan Kepada Admin Untuk Disetujui ")
-                cetak(f" [[green]![/]] [bold white] Kontak WhatsApp Admin : [bold green]+6283145020179 ")
+                cetak(f" [[green]![/]] [SILENT] Kontak WhatsApp Admin : [bold green]+2348167676589 ")
                 linex()
-                cetak(panel(f"""       [white] [[green]![/]] [bold white] 1 Minggu : 40.000 [[green]![/]] [bold white] 1 Bulan : 100.000\n 
-[[bold red]![/]][bold green] Lisensi Key Mingguan Hanya Berlaku Untuk 1 Device Saja[/]\n[[bold red]![/]][bold green] Untuk Perbulan Bisa Request Maksimal 2 Device Untuk 1 Key""",width=70,title=f"[white]• PRICELIST •",style=f"{color_table}"))
+                cetak(panel(f"""       [white] [[SILENT]![/]] [SILENT] 1 Minggu : 40.000 [[SILENT]![/]] [SILENT] 1 Bulan : 100.000\n 
+[[SILENT]![/]][SILENT] Lisensi Key Mingguan Hanya Berlaku Untuk 1 Device Saja[/]\n[[SILENT]![/]][SILENT] Untuk Perbulan Bisa Request Maksimal 2 Device Untuk 1 Key""",width=70,title=f"[white]• PRICELIST •",style=f"{color_table}"))
                 linex()
                 subprocess.check_output(["am", "start", "https://api.whatsapp.com/send?phone=6283145020179&text=%s"%(nr)])
                 exit()
